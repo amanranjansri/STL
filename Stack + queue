@@ -1,0 +1,56 @@
+
+1. Stack implementation
+
+
+#include <iostream>
+#include <stack>
+using namespace std;
+
+int main()
+{
+    stack<string> s;
+
+    s.push("Aman Ranjan");
+    s.push("Alok Ranjan");
+    s.push("Ashish Ranjan");
+    s.push("Shubham Ranjan");
+
+    cout << "Top element ->" << s.top() << endl;
+
+    s.pop();
+
+    cout << "Top element ->" << s.top() << endl;
+
+    cout << "size of  element ->" << s.size() << endl;
+
+    cout << "Empty or not ->" << s.empty();
+
+    return 0;
+}
+
+
+
+2. Queue Implementation
+
+
+#include <iostream>
+#include <queue>
+using namespace std;
+
+int main()
+{
+
+    queue<string> q;
+
+    q.push("Aman Ranjan");
+    q.push("Alok Ranjan");
+    q.push("Ashish Ranjan");
+    q.push("Shubham Ranjan");
+
+    cout << "Top element ->" << q.front() << endl;
+    q.pop();
+    cout << "Top element ->" << q.front() << endl;
+    cout << "Size of element->" << q.size() << endl;
+
+    return 0;
+}
