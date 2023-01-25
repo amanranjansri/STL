@@ -1,0 +1,39 @@
+#include <iostream>
+#include <map>
+using namespace std;
+
+int main()
+{
+    map<int, string> m;
+
+
+    m[1] = "Aman ranjan";
+    m[89] = "Alok ranjan";
+    m[24] = "Ashish ranjan";
+    m[4] = "Shubham ranjan";
+
+
+
+    for (auto i : m)
+    {
+        cout << i.first << " ";
+    }
+    cout << endl;
+
+
+    m.insert({44, "JAI SHREE RAM"});
+
+
+
+    for (auto i : m)
+    {
+        cout << i.first << " " << i.second << endl;
+    }
+
+
+
+    cout << "finding 44 ->" << m.count(44) << endl;
+
+    
+    return 0;
+}
